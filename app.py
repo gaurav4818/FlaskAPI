@@ -16,7 +16,7 @@ def get_scanner_data():
         data = s.post(url, headers=header, data=condition).json()
         stock_list = data["data"]
         print(stock_list)
-    return jsonify(stock_list)
+    return jsonify(stock_list) 
 
 if __name__ == '__main__':
     app.run()
